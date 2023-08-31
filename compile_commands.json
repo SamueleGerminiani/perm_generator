@@ -1,0 +1,32 @@
+[
+  {
+    "arguments": [
+      "/opt/homebrew/bin//gcc-13",
+      "-Wall",
+      "-std=c99",
+      "-I./include",
+      "-c",
+      "-o",
+      "src/main.o",
+      "src/main.c"
+    ],
+    "directory": "/Users/sam/test",
+    "file": "/Users/sam/test/src/main.c",
+    "output": "/Users/sam/test/src/main.o"
+  },
+  {
+    "arguments": [
+      "/opt/homebrew/bin//gcc-13",
+      "-Wall",
+      "-std=c99",
+      "-I./include",
+      "-c",
+      "-o",
+      "src/factorial.o",
+      "src/factorial.c"
+    ],
+    "directory": "/Users/sam/test",
+    "file": "/Users/sam/test/src/factorial.c",
+    "output": "/Users/sam/test/src/factorial.o"
+  }
+]
