@@ -1,6 +1,5 @@
-
-/** Function to generate a permutation
- *
- *
+/** @file perms.h
  */
-void generatePermutations(int list[], int start, int end) ;
+
+///Function to generate a permutation
+void generatePermutations(int list[], int start, int end);
