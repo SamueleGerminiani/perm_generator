@@ -1,0 +1,14 @@
+build/*
+install/*
+*.swp
+tags
+Session.vim
+.vdcode/*
+*.srctrlbm
+*.srctrldb
+*.srctrlprj
+W_cmake_command.txt
+.vscode
+.cache/*
+.cache
+.DS_Store

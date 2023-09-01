@@ -1,7 +1,8 @@
-NAME=factorial
-CFLAGS=-Wall -std=c99
+NAME=permGen
+CFLAGS=-g -Wall -std=c99
 INCLUDE=-I./include
-SRCS=src/main.c src/factorial.c
+SRCS=src/main.c src/swap.c src/perms.c
+
 OBJS=$(SRCS:.c=.o)
 
 $(NAME): $(OBJS)

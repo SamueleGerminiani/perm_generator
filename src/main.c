@@ -1,18 +1,27 @@
-#include <factorial.h>
+/**
+ * @file main.cc
+ *
+ * @brief Permutation generator
+ *
+ * @author Samuele Germiniani
+ *
+ */
+
+#include <perms.h>
 #include <stdio.h>
 
-//git test
 int main() {
-    int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
+    int n;
+    printf("Enter the number of elements in the list: ");
+    scanf("%d", &n);
 
-    if (num < 0) {
-        printf("Factorial is not defined for negative numbers.\n");
-    } else {
-        int result = factorial(num);
-        printf("Factorial of %d is %d\n", num, result);
+    int list[n];
+    for (int i = 0; i < n; i++) {
+        list[i]=i;
     }
+
+    printf("Permutations:\n");
+    generatePermutations(list, 0, n-1);
 
     return 0;
 }
