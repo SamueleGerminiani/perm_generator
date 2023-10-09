@@ -11,7 +11,7 @@ $(NAME): $(OBJS)
 
 %.o : %.c
 	@echo "Compiling: "$<
-	@$(CC) $(CFLAGS) $(INCLUDE) -c $< -o $@
+	@$(CC) $(CFLAGS) -I$(INCLUDE) -c $< -o $@
 
 .PHONY: clean
 

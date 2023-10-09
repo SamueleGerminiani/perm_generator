@@ -9,6 +9,7 @@ void generatePermutations(int list[], int start, int end) {
         // A permutation is found, print it
         for (unsigned int i = end; i >= 0; i--) {
             printf("%d ", list[i]);
+            fflush(stdout);
         }
         printf("\n");
     } else {
