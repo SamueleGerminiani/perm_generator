@@ -9,19 +9,22 @@
 
 #include <perms.h>
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
-    int n;
-    printf("Enter the number of elements in the list: ");
-    scanf("%d", &n);
+int main(const int argc, const char *argv[]) {
+  if (argc < 2) {
+    printf("Usage: %s <number of elements>\n", argv[0]);
+    return 1;
+  }
+  int n = atoi(argv[1]);
 
-    int list[n];
-    for (int i = 0; i < n; i++) {
-        list[i]=i;
-    }
+  int list[n];
+  for (int i = 0; i < n; i++) {
+    list[i] = i;
+  }
 
-    printf("Permutations:\n");
-    generatePermutations(list, 0, n-1);
+  printf("Permutations:\n");
+  generatePermutations(list, 0, n - 1);
 
-    return 0;
+  return 0;
 }
