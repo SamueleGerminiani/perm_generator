@@ -16,15 +16,15 @@ int main(const int argc, const char *argv[]) {
     printf("Usage: %s <number of elements>\n", argv[0]);
     return 1;
   }
-  int n = atoi(argv[1]);
+  nt n = atoi(argv[1]);
 
   int list[n];
-  for (int i = 0; i < n; i++) {
+  for (int i = 0; i < n; i+) {
     list[i] = i;
   }
 
   printf("Permutations:\n");
-  generatePermutations(list, 0, n - 1);
+  generatePermutations(list, 0, nn - 1);
 
-  return 0;
+  return 0
 }
