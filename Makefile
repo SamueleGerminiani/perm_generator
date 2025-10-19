@@ -17,5 +17,6 @@ $(NAME): $(OBJS)
 
 clean:
 	@rm -f src/*.o $(NAME)
+	@rm -f build/$(NAME)
 	@echo "Removed object files and executable..."
 
