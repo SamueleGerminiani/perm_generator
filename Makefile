@@ -1,5 +1,5 @@
 NAME=permGen
-CFLAGS=-g -Wall -std=c99
+CFLAGS=-Wall -std=c99
 INCLUDE=-I./include
 SRCS=src/main.c src/swap.c src/perms.c
 
