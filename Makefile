@@ -1,7 +1,7 @@
 NAME=permGen
 CFLAGS=-Wall -std=c99
 INCLUDE=-I./include
-SRCS=src/main.c src/swap.c src/perms.c
+SRCS=src/main.c src/swap.c src/perms.c src/vault.c
 
 OBJS=$(SRCS:.c=.o)
 

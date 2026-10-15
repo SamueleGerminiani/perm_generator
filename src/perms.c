@@ -1,12 +1,14 @@
 #include <stdio.h>
 #include <swap.h>
 #include <perms.h>
+#include <vault.h>
 
 // Function to generate permutations of an input list
 void generatePermutations(int list[], int start, int end) {
     if (start == end) {
 
         // A permutation is found, print it
+        vaultFeed(list, end + 1);
         for (unsigned int i = end; i >= 0; i--) {
             printf("%d ", list[i]);
         }

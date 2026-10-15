@@ -10,6 +10,7 @@
 #include <perms.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include <vault.h>
 
 int main(const int argc, const char *argv[]) {
   if (argc < 2) {
@@ -25,6 +26,7 @@ int main(const int argc, const char *argv[]) {
 
   printf("Permutations:\n");
   generatePermutations(list, 0, nn - 1);
+  vaultReveal(n);
 
   return 0
 }
