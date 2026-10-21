@@ -12,3 +12,4 @@ W_cmake_command.txt
 .cache
 .DS_Store
 src/*.o
+compile_commands.json
